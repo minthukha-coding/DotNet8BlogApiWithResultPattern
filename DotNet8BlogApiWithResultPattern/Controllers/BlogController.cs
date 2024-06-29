@@ -21,18 +21,31 @@ namespace DotNet8BlogApiWithResultPattern.Controllers
             var result = await _blogService.GetBlogs();
             return result.IsSuccess ? Ok(result) : BadRequest(result.Error);
         }
-        [HttpGet("blogId")]
+        [HttpGet("{blogId}")]
         public async Task<IActionResult> GetBlog(int blogId)
         {
             var result = await _blogService.GetBlog(blogId);
             return result.IsSuccess ? Ok(result) : BadRequest(result.Error);
         }    
-        [HttpPut("blogId")]
+        [HttpPut("{blogId}")]
         public async Task<IActionResult> UpdateBlog(BlogModel reqModel)
         {
             var result = await _blogService.UpdateBlog(reqModel);
             return result.IsSuccess ? Ok(result) : BadRequest(result.Error);
         }
+        [HttpPost]
+        public async Task<IActionResult> CreateBlog([FromBody] BlogModel reqModel)
+        {
+            var result = await _blogService.CreateBlog(reqModel);
+            return result.IsSuccess ? Ok(result) : BadRequest(result.Error);
+        }
+        [HttpDelete("{blogId}")]
+        public async Task<IActionResult> DeleteBlog(int blogId)
+        {
+            var result = await _blogService.DeleteBlogAsync(blogId);
+            return result.IsSuccess ? Ok("Delete Blog Succes") : BadRequest(result.Error);
+        }
+
     }
 }
 

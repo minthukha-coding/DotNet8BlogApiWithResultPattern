@@ -1,10 +1,16 @@
-﻿namespace DotNet8BlogApiWithResultPattern.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace DotNet8BlogApiWithResultPattern.Models
 {
+    [Table("Tbl_blog")]
+
     public class BlogModel
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string Content { get; set; }
+        [Key]
+        public int BlogId { get; set; }
+        public string BlogTitle { get; set; }
+        public string BlogAuthor { get; set; }
+        public string BlogContent { get; set; }
     }
 }

@@ -1,4 +1,6 @@
+using DotNet8BlogApiWithResultPattern.Repositories;
 using DotNet8BlogApiWithResultPattern.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace DotNet8BlogApiWithResultPattern
 {
@@ -15,8 +17,14 @@ namespace DotNet8BlogApiWithResultPattern
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            // Register the IBlogService
+            // Register the Service
+            builder.Services.AddDbContext<AppDbContext>(opt =>
+            {
+                string connectionString = builder.Configuration.GetConnectionString("DbConnection")!;
+                opt.UseSqlServer(connectionString);
+            });
             builder.Services.AddScoped<IBlogService, BlogService>();
+            builder.Services.AddScoped<BlogRepository>();
 
             var app = builder.Build();
 
