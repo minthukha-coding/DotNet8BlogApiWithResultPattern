@@ -1,4 +1,6 @@
 
+using DotNet8BlogApiWithResultPattern.Services;
+
 namespace DotNet8BlogApiWithResultPattern
 {
     public class Program
@@ -13,6 +15,9 @@ namespace DotNet8BlogApiWithResultPattern
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Register the IBlogService
+            builder.Services.AddScoped<IBlogService, BlogService>();
 
             var app = builder.Build();
 
