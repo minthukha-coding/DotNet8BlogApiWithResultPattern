@@ -5,6 +5,8 @@ namespace DotNet8BlogApiWithResultPattern.Services
 {
     public interface IBlogService
     {
-        Task<Result<IEnumerable<BlogModel>>> GetBlogsAsync();
+        Task<Result<IEnumerable<BlogModel>>> GetBlogs();
+        Task<Result<BlogModel>> GetBlog(int  blogId);
+        Task<Result<BlogModel>> UpdateBlog(BlogModel  reqModel);
     }
 }
