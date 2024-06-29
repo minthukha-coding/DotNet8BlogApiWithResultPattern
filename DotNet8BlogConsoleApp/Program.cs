@@ -1,10 +1,5 @@
-﻿namespace DotNet8BlogConsoleApp
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
-}
+﻿using DotNet8BlogConsoleApp;
+
+ConsoleBlog consoleBlog = new ConsoleBlog();
+consoleBlog.Run();
+Console.ReadLine();
