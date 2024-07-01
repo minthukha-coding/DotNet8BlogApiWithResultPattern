@@ -1,4 +1,6 @@
-﻿namespace DotNet8BlogApiWithResultPattern.Controllers;
+﻿using DotNet8.BlogApiWithResultPattern.Services;
+
+namespace DotNet8.BlogApiWithResultPattern.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]

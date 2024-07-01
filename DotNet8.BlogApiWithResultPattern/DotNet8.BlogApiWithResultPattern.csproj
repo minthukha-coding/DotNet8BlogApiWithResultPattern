@@ -13,7 +13,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Shared\Shared.csproj" />
+	  <ProjectReference Include="..\DotNet8.Shared\DotNet8.Shared.csproj" />
 	</ItemGroup>
 
 </Project>

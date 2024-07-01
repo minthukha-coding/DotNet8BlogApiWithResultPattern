@@ -1,4 +1,4 @@
-﻿using DotNet8BlogConsoleApp;
+﻿using DotNet8.Blog.ConsoleApp;
 
 ConsoleBlog consoleBlog = new ConsoleBlog();
 consoleBlog.Run();

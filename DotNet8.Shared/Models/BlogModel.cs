@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Shared.Models;
+namespace DotNet8.Shared.Models;
 
 [Table("Tbl_blog")]
 

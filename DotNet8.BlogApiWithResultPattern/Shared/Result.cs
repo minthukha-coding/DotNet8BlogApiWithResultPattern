@@ -1,4 +1,4 @@
-﻿namespace DotNet8BlogApiWithResultPattern.Shared;
+﻿namespace DotNet8.BlogApiWithResultPattern.Shared;
 
 public class Result
 {

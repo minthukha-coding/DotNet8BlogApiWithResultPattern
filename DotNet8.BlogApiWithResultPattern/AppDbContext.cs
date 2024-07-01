@@ -1,4 +1,4 @@
-﻿namespace DotNet8BlogApiWithResultPattern;
+﻿namespace DotNet8.BlogApiWithResultPattern;
 
 public class AppDbContext : DbContext
 {

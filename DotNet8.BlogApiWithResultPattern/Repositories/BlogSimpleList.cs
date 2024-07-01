@@ -1,4 +1,4 @@
-﻿namespace DotNet8BlogApiWithResultPattern.Repositories;
+﻿namespace DotNet8.BlogApiWithResultPattern.Repositories;
 
 public class BlogSimpleList
 {

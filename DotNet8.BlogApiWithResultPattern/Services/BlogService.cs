@@ -1,4 +1,7 @@
-﻿namespace DotNet8BlogApiWithResultPattern.Services;
+﻿using DotNet8.BlogApiWithResultPattern.Repositories;
+using DotNet8.BlogApiWithResultPattern.Shared;
+
+namespace DotNet8.BlogApiWithResultPattern.Services;
 
 public class BlogService : IBlogService
 {

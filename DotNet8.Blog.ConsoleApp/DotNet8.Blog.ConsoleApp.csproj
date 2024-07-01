@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNet8BlogApiWithResultPattern\DotNet8BlogApiWithResultPattern.csproj" />
-    <ProjectReference Include="..\Shared\Shared.csproj" />
+    <ProjectReference Include="..\DotNet8.BlogApiWithResultPattern\DotNet8.BlogApiWithResultPattern.csproj" />
+    <ProjectReference Include="..\DotNet8.Shared\DotNet8.Shared.csproj" />
   </ItemGroup>
 
 </Project>

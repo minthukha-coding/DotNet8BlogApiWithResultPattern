@@ -1,8 +1,8 @@
-using DotNet8BlogApiWithResultPattern.Repositories;
-using DotNet8BlogApiWithResultPattern.Services;
+using DotNet8.BlogApiWithResultPattern.Repositories;
+using DotNet8.BlogApiWithResultPattern.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotNet8BlogApiWithResultPattern
+namespace DotNet8.BlogApiWithResultPattern
 {
     public class Program
     {
