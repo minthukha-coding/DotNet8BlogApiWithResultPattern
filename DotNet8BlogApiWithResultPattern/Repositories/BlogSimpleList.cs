@@ -1,6 +1,4 @@
-﻿using Shared.Models;
-
-namespace DotNet8BlogApiWithResultPattern.Repositories;
+﻿namespace DotNet8BlogApiWithResultPattern.Repositories;
 
 public class BlogSimpleList
 {

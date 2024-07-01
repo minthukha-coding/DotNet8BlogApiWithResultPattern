@@ -1,14 +1,10 @@
-﻿using DotNet8BlogApiWithResultPattern.Shared;
-using Shared.Models;
+﻿namespace DotNet8BlogApiWithResultPattern.Services;
 
-namespace DotNet8BlogApiWithResultPattern.Services
+public interface IBlogService
 {
-    public interface IBlogService
-    {
-        Task<Result<IEnumerable<BlogModel>>> GetBlogs();
-        Task<Result<BlogModel>> GetBlog(int  blogId);
-        Task<Result<BlogModel>> UpdateBlog(BlogModel  reqModel);
-        Task<Result<bool>> DeleteBlogAsync(int blogId);
-        Task<Result<BlogModel>> CreateBlog(BlogModel reqModel);
-    }
+    Task<Result<IEnumerable<BlogModel>>> GetBlogs();
+    Task<Result<BlogModel>> GetBlog(int  blogId);
+    Task<Result<BlogModel>> UpdateBlog(BlogModel  reqModel);
+    Task<Result<bool>> DeleteBlogAsync(int blogId);
+    Task<Result<BlogModel>> CreateBlog(BlogModel reqModel);
 }
