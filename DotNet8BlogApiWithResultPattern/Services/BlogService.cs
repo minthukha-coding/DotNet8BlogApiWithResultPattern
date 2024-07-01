@@ -1,6 +1,6 @@
-﻿using DotNet8BlogApiWithResultPattern.Models;
-using DotNet8BlogApiWithResultPattern.Repositories;
+﻿using DotNet8BlogApiWithResultPattern.Repositories;
 using DotNet8BlogApiWithResultPattern.Shared;
+using Shared.Models;
 
 namespace DotNet8BlogApiWithResultPattern.Services
 {

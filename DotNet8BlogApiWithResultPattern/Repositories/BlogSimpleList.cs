@@ -1,4 +1,4 @@
-﻿using DotNet8BlogApiWithResultPattern.Models;
+﻿using Shared.Models;
 
 namespace DotNet8BlogApiWithResultPattern.Repositories;
 
@@ -16,7 +16,7 @@ public class BlogSimpleList
             new BlogModel { BlogId = 8, BlogTitle = "Financial Freedom", BlogAuthor = "DavidWilson", BlogContent = "Strategies for achieving financial independence." },
             new BlogModel { BlogId = 9, BlogTitle = "Art and Creativity", BlogAuthor = "OliviaMartinez", BlogContent = "Inspiring creativity through various forms of art." },
             new BlogModel { BlogId = 10,BlogTitle = "Fitness and Wellbeing", BlogAuthor = "LiamGarcia", BlogContent = "Effective workouts and tips for staying fit." }
-        };
+    };
     public static IEnumerable<BlogModel> GetBlogs()
     {
         return _blogs;

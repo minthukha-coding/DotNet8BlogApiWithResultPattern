@@ -1,6 +1,5 @@
-﻿
-using DotNet8BlogApiWithResultPattern.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Shared.Models;
 
 namespace DotNet8BlogApiWithResultPattern
 {
