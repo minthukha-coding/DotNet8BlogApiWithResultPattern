@@ -8,6 +8,7 @@ public class BlogRepository
     {
         _appDbcontext = appDbcontext;
     }
+
     public async Task<IEnumerable<BlogModel>> GetBlogs()
     {
         return await _appDbcontext.Blogs.ToListAsync();
