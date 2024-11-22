@@ -1,12 +1,4 @@
-﻿using DotNet8.BlogApiWithResultPattern;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Text;
-using static System.Net.Mime.MediaTypeNames;
-using DotNet8.BlogApiWithResultPattern.Shared;
-using DotNet8.Shared.Models;
-
-namespace DotNet8.Blog.ConsoleApp;
+﻿namespace DotNet8.Blog.ConsoleApp;
 
 public class ConsoleBlog
 {
